@@ -1,0 +1,334 @@
+/*== <!--css--> ==*/
+/*body*/
+.body-weft{
+  border-top: 2px solid silver !important;
+  text-align:center;
+  color:black;
+  background-size:cover;
+  font-family: 'Kaushan Script', cursive;
+}
+/*background par sections*/
+.background1{
+  background-image:url(../img/planetfooter.jpg);
+  background-position: center;
+  background-color: #B67D09;
+  background-attachment: fixed;
+}
+.background2{
+  background-image:url(../img/montagne2.jpg);
+  background-color: #B67D09;
+  background-size: cover;
+}
+.background3{
+  background-image:url(../img/prince.jpg);
+  background-color: #B67D09;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#mysect1 {
+  padding: 20% 0;
+}
+#mysect2 {
+  padding: 10% 0;
+}
+#mysect3 {
+  padding: 10% 0;
+}
+#mysect4 {
+  padding: 10% 0;
+}
+#mysect5 {
+  padding: 10% 0;
+}
+#mysect6 {
+  padding: 20% 0;
+  background-color: blue;
+  color:white;
+  background-image:url(../img/planet3.jpg);
+  background-size:cover;
+  border-top:1px solid blue;
+  margin:0;
+}
+
+.style-Fieldset {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem;
+  border: 1px solid silver;
+  box-shadow:4px 5px 10px darkblue;;
+  width:70%;
+  max-height: 20%;
+  padding:16px;
+  border-radius: 40px;
+  background: linear-gradient(-45deg, blue, silver, darkblue, silver, blue);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 25s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.size-60px{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.size-min-responsive{
+  width: 3rem;
+  height: 3rem;
+}
+
+
+
+/*progress bar*/
+.progress{
+  width: 5rem;
+  height: 5rem;
+  line-height: 100px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+}
+.progress:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress > span{
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress .progress-left{
+  left: 0;
+}
+.progress .progress-bar{
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+.progress .progress-left .progress-bar{
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress .progress-right{
+  right: 0;
+}
+.progress .progress-right .progress-bar{
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #44484b;
+  font-size: 15px;
+  color: #fff;
+  line-height: 90px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.progress.blue .progress-bar{
+  border-color: #049dff;
+}
+.progress.blue .progress-left .progress-bar{
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+  border-color: #fdba04;
+}
+.progress.yellow .progress-left .progress-bar{
+  animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.red .progress-bar{
+  border-color: #ed687c;
+}
+.progress.red .progress-left .progress-bar{
+  animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.green .progress-bar{
+  border-color: #1abc9c;
+}
+.progress.green .progress-left .progress-bar{
+  animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-2{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+  }
+}
+@keyframes loading-3{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+@keyframes loading-4{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+
+  }
+}
+@keyframes loading-5{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@media only screen and (max-width: 990px){
+  .progress{ margin-bottom: 20px; }
+}
+/*bouton de retour vers le haut*/
+.top
+{
+  display: none;
+  position: fixed;
+  max-width: 60px;
+  width : 10%;
+  height: auto;
+  top : 10px;
+  right: 10px;
+  opacity: 0.8;
+}
+.textareaSizing{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.form-control-custom {
+  display: block;
+  width: 80%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.bg-space {
+  background-image: url("../img/navbar-Espace.jpeg") !important;
+  background-position: center;
+  background-size: cover;
+  background-color: blue;
+}
+
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-image: url("../img/navbar-Espace.jpeg") !important;
+  background-position: center;
+  background-size: cover;
+  background-color: blue;
+}
+.container-1
+{
+  display: flex;
+  font-size: 1.25rem;
+}
+.container-Bis
+{
+    width: 100px;
+    height: 200px;
+    margin: auto;
+}
+.h3{
+  margin-top:15px;
+  margin-bottom: 15px;
+}
